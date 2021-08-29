@@ -15,14 +15,14 @@ public interface ContactDAO {
     public long addContact(Contact contact);
 
     @Update
-    public long updateContact(Contact contact);
+    public void updateContact(Contact contact);
 
     @Delete
-    public long deleteContact(Contact contact);
+    public void deleteContact(Contact contact);
 
 
-    @Query("select * from contacts ")
-    public List<Contact>getContacts(;
+    @Query("select * from contacts")
+    public List<Contact>getContacts();
 
     @Query("select * from contacts Where contact_id ==:contactId")
     public Contact getContact(long contactId);
