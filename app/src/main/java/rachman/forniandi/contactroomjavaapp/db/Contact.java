@@ -22,10 +22,10 @@ public class Contact {
     public Contact() {
     }
 
-    public Contact(String name, String email, long id) {
+    public Contact( long id,String name, String email) {
+        this.id = id;
         this.name = name;
         this.email = email;
-        this.id = id;
     }
 
 
